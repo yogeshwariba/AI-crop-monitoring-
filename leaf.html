@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaf Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🍃 Leaf Disease Detection</h1>
+
+<input type="file" accept="image/*">
+<br><br>
+
+<button onclick="detect()">Detect Disease</button>
+
+<p id="result"></p>
+
+<a href="index.html" class="btn">⬅ Back</a>
+
+<script>
+function detect() {
+    document.getElementById("result").innerHTML =
+    "🦠 Disease: Leaf Blight <br> ✅ Confidence: 93% <br> 💡 Suggestion: Use fungicide & proper irrigation";
+}
+</script>
+
+</body>
+</html>
